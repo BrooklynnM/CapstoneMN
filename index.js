@@ -1,6 +1,6 @@
 import Navigo from "navigo";
 import { capitalize } from "lodash";
-import { Header, Nav, Main, Footer } from "./components";
+import { Header, Nav, Main, Footer } from "./Components";
 import * as state from "./store";
 const router = new Navigo(window.location.origin);
 function render(st = state.Home) {
