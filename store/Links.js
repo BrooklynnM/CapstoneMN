@@ -1,6 +1,9 @@
 export default [
   { title: "Home", text: "Home" },
-  { title: "Makup", text: "Makeup" },
+  { title: "About", text: "About" },
+  { title: "Makeup", text: "Makeup" },
   { title: "Wigs", text: "Wigs" },
-  { title: "Signup", text: "Signup" }
+  { title: "Order", text: "Order" },
+  { title: "Signup", text: "Signup" },
+  { title: "Blog", text: "Blog" }
 ];

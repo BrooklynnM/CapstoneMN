@@ -1,3 +1,3 @@
 export default () => `
-<h1> "Hello" </h1>
+<h1> "Signup for our mailing list. Follow us." </h1>
 `;
