@@ -3,6 +3,7 @@ import { capitalize } from "lodash";
 import { Header, Nav, Main, Footer } from "./Components";
 import * as state from "./store";
 import axios from "axios";
+import "./env";
 const router = new Navigo(window.location.origin);
 function render(st = state.Home) {
   document.querySelector("#root").innerHTML = `
@@ -44,3 +45,42 @@ axios
     }
   })
   .then(response => console.log(response.data));
+
+// Initialize and add the map
+function initMap() {
+  const merlenorman = { lat: 38.5936, lng: -89.977666 };
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 14,
+    center: merlenorman
+  });
+  const marker = new google.maps.Marker({
+    position: merlenorman,
+    map: map
+  });
+}
+
+// loadMapsJSAPI();
+// function runApp() {
+//   // The location of Uluru
+//   const uluru = { lat: 38.561, lng: -90.444 };
+//   // The map, centered at Uluru
+//   const map = new google.maps.Map(document.getElementById("map"), {
+//     zoom: 12,
+//     center: uluru
+//   });
+//   // The marker, positioned at Uluru
+//   const marker = new google.maps.Marker({
+//     position: uluru,
+//     map: map
+//   });
+// }
+// function loadMapsJSAPI() {
+//   const googleMapsAPIKey = "AIzaSyAQ5l4se6K1TE-XPXIxQ282m3DsH2G_hig";
+//   const googleMapsAPIURI = `https://maps.googleapis.com/maps/api/js?key=${googleMapsAPIKey}&callback=runApp`;
+//   const script = document.createElement("script");
+//   script.src = googleMapsAPIURI;
+//   script.defer = true;
+//   script.async = true;
+//   window.runApp = runApp;
+//   document.head.appendChild(script);
+// }

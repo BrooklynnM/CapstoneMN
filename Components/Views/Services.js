@@ -1,4 +1,3 @@
 export default () => `
-<header>
-</header>
+<h1> "Services" </h1>
 `;

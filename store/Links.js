@@ -4,6 +4,5 @@ export default [
   { title: "Makeup", text: "Makeup" },
   { title: "Wigs", text: "Wigs" },
   { title: "Order", text: "Order" },
-  { title: "Signup", text: "Signup" },
-  { title: "Blog", text: "Blog" }
+  { title: "Services", text: "Services" }
 ];

@@ -4,3 +4,6 @@ dist
 node_modules
 *.sw*
 GHtoken: e5529347ad2ab6722179e13dc47e6c0ced62f6db
+.env
+google map api key: AIzaSyAQ5l4se6K1TE-XPXIxQ282m3DsH2G_hig
+

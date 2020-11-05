@@ -13,8 +13,8 @@
 export default links => `
 <nav>
   <i class="fas fa-bars"></i>
-  <ul class="hidden--mobile nav-links">
-  ${links.reduce(
+<ul class="hidden--mobile nav-links">
+${links.reduce(
   (html, link) =>
     html +
     `<li><a href="/${link.title !== "Home" ? link.title : ""}" title="${
@@ -22,6 +22,6 @@ export default links => `
     }" data-navigo>${link.text}</a></li>`,
   ``
 )}
-  </ul>
+</ul>
 </nav>
 `;
