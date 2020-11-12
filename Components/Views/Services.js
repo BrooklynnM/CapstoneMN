@@ -1,3 +1,5 @@
 export default () => `
-<h1> "Services" </h1>
+<div class="service-menu">
+  <img src="https://github.com/BrooklynnM/CapstoneMN/blob/master/Pictures/ServiceMenuExample.jpeg?raw=true">
+</div>
 `;

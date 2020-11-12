@@ -8,6 +8,24 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQ5l4se6K1TE-XPXIxQ282m3DsH2G_hig&callback=initMap&libraries=&v=weekly"
+    defer
+  ></script>
+<script>
+    function initMap() {
+      const merlenorman = { lat: 38.5936, lng: -89.977666 };
+      const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 14,
+          center: merlenorman,
+      });
+      const marker = new google.maps.Marker({
+          position: merlenorman,
+          map: map,
+      });
+  }
+  </script>
   </head>
   <body>
     <div id="root"></div>

@@ -11,7 +11,7 @@
 // </nav>`;
 
 export default links => `
-<nav>
+<nav class="hidden">
   <i class="fas fa-bars"></i>
 <ul class="hidden--mobile nav-links">
 ${links.reduce(

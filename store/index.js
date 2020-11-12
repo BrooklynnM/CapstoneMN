@@ -5,3 +5,4 @@ export { default as Wigs } from "./Wigs";
 export { default as Order } from "./Order";
 export { default as Services } from "./Services";
 export { default as Links } from "./Links";
+export { default as Contact } from "./Contact";
